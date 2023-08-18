@@ -3,7 +3,7 @@ pipeline {
     parameters { 
         string(name: 'Maven_Goal', defaultValue: 'package')
     }
-    triggers { pollSCM(H/5 * * * *) }
+    triggers { pollSCM('H/5 * * * *') }
     stages {
         stage('vcs') {
             steps {
