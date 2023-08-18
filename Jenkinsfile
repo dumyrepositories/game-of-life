@@ -42,7 +42,7 @@ pipeline {
         failure {
            mail subject: "The ${JOB_NAME} buld id ${BUILD_ID} is failure",
                  body: "Check more information about build using URL ${BUILD_URL}",
-                 to: 'team-all@devops.in' 'test@checkteam.devops',
+                 to: 'team-all@devops.in, test@checkteam.devops',
                  from: 'jenkins@jobs.info' 
         }
     }
